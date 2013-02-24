@@ -18,6 +18,7 @@
 # === Authors
 #
 # Sebastian Nowicki <sebnow@gmail.com>
+# Philip Horger <campadrenalin@gmail.com>
 #
 define cjdns::password (
   $ensure = present,

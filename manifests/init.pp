@@ -64,6 +64,7 @@
 # === Authors
 #
 # Sebastian Nowicki <sebnow@gmail.com>
+# Philip Horger <campadrenalin@gmail.com>
 #
 class cjdns (
   $ensure = present,

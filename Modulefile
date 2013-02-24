@@ -1,10 +1,9 @@
-name 'sebnow-cjdns'
+name 'campadrenalin-cjdns'
 version '0.0.1'
-project_page 'https://github.com/sebnow/puppet-cjdns'
+project_page 'https://github.com/campadrenalin/puppet-cjdns'
 license 'MIT'
-author 'Sebastian Nowicki <sebnow@gmail.com>'
+author 'Philip Horger <campadrenalin@gmail.com>'
 summary "This module installs and configures CJDNS"
-description "This module installs and configures CJDNS
+description "This module installs and configures CJDNS.
 
-It has been tested on Ubuntu 12.04 Precise Pangolin."
-
+It is being designed and tested to run on Debian Stable and Travis-CI."

@@ -3,7 +3,7 @@
 This is forked from a [not-that-maintained version][sebnow] that I found on the internet. It's being revitalized for use as a standard part of the Roaming Initiative FOSS system, to be put into real world use in mesh relays and towers, with regular testing via Travis-CI.
 
 System configurations currently supported:
- * Debian Stable with repo ruby, repo Augeas, git Puppet, and git CJDNS.
+ * Debian Stable with repo ruby, repo Augeas, gem Hiera, git Puppet, and git CJDNS.
  * Travis-CI (Coming soon)
 
 ## Installation
@@ -33,6 +33,7 @@ My personal environment is in VirtualBox, with:
 
  * Ruby, installed via apt
  * Augeas, installed via apt
+ * Hiera, installed via rubygems
  * Puppet, installed via git
  * CJDNS, installed via git
 

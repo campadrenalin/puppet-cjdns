@@ -11,7 +11,7 @@ System configurations currently supported:
 Installation should be easy, and include installing CJDNS from source and generating a config if it's not already available. This part is still under development, but should eventually follow the following workflow:
 
 1. Install non-CJDNS dependencies, including Augeas.
-2. Install module via `puppet module install campadrenalin/cjdns`.
+2. Install module via `sudo puppet module install Campadrenalin-cjdns`.
 3. Specify a "cjdns" class in one of your development manifests.
 4. Apply that manifest.
 

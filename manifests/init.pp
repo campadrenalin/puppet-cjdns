@@ -129,6 +129,7 @@ class cjdns (
   } else {
     exec {'cjdroute --genconf':
       command => inline_template("cjdroute --genconf | sed '<%= workarounds.join('; ') %>' > $conf_path"),
+      path    => "/usr/bin/:/usr/local/bin/:/bin/:",
       creates => $conf_path,
     }
 

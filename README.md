@@ -32,10 +32,10 @@ Anyone with a free afternoon can download a copy of Debian Stable, install it on
 My personal environment is in VirtualBox, with:
 
  * Ruby, installed via apt
- * Augeas, installed via apt
  * Hiera, installed via rubygems
- * Puppet, installed via git
- * CJDNS, installed via git
+ * Puppet, installed via [git][https://github.com/puppetlabs/puppet]
+ * Augeas, installed via [git][http://github.com/lutter/augeas]
+ * CJDNS, installed via [git][https://github.com/cjdelisle/cjdns]
 
 At some point, puppet-cjdns will also support handling the CJDNS installation process for you.
 

@@ -98,14 +98,8 @@ class cjdns (
     '/\/\*/,/\*\//d',
     # Remove empty lines
     '/^\s*$/d',
-    # Remove example values. Some of these cause issues.
-    '/router/,/},/d',
-    '/interfaces/,/},/d',
-    '/security/,/],/d',
-    '/admin/,/},/d',
-    '/authorizedPasswords/,/],/d',
     # Numbers are valid but the lens doesn't support them
-    's/"\:[\t ]*\([0-9][0-9]*\)\(,\)\?$/":"\1"\2/',
+    #'s/"\:[\t ]*\([0-9][0-9]*\)\(,\)\?$/":"\1"\2/',
   ]
 
   if $ensure == "present" {
@@ -119,7 +113,8 @@ class cjdns (
   }
 
   package {$package:
-    ensure => $package_ensure,
+    # CJDNS not currently handled via dpkg
+    ensure => absent #$package_ensure,
   }
 
   if $ensure == 'absent' {

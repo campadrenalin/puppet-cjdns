@@ -17,6 +17,18 @@ Installation should be easy, and include installing CJDNS from source and genera
 
 This will be filled out in more detail as it becomes reality.
 
+### Installing Augeas
+
+Augeas is useful, but the build system is maintained by kitten eaters and madmen. The issue tracker is designed to discourage "outsiders." If you want to build from source, I wish you luck, you naive soul. Unfortunately, for JSON parsing to work right at all, you need the latest version of the JSON lens. So what do you do?
+
+The recommended solution is as follows:
+
+1. Install Augeas from your package repo. As long as it's not unspeakably ancient, this will probably work fine.
+2. `$ wget https://raw.github.com/lutter/augeas/master/lenses/json.aug`
+3. `$ sudo mv json.aug /usr/share/augeas/lenses/dist/`
+
+This pulls in the latest JSON lens to work in your old precompiled package.
+
 ## Testing
 
 ### Travis-CI
@@ -33,9 +45,9 @@ My personal environment is in VirtualBox, with:
 
  * Ruby, installed via apt
  * Hiera, installed via rubygems
- * Puppet, installed via [git][https://github.com/puppetlabs/puppet]
- * Augeas, installed via [git][http://github.com/lutter/augeas]
- * CJDNS, installed via [git][https://github.com/cjdelisle/cjdns]
+ * Augeas, see above.
+ * Puppet, installed via [git](https://github.com/puppetlabs/puppet)
+ * CJDNS, installed via [git](https://github.com/cjdelisle/cjdns)
 
 At some point, puppet-cjdns will also support handling the CJDNS installation process for you.
 

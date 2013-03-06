@@ -1,5 +1,5 @@
 name 'campadrenalin-cjdns'
-version '0.0.4'
+version '0.0.5'
 project_page 'https://github.com/campadrenalin/puppet-cjdns'
 license 'MIT'
 author 'Philip Horger <campadrenalin@gmail.com>'

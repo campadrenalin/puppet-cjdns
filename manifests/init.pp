@@ -162,7 +162,7 @@ class cjdns (
         "defnode router entry[. = 'router'] router",
         "defnode iface \$router/dict/entry[. = 'interface'] interface",
         "set \$iface/dict/entry[. = 'type'] type",
-        "set \$iface/dict/entry[. = 'type']/string 'TUNInterface'",
+        #"set \$iface/dict/entry[. = 'type']/string 'TUNInterface'",
       ],
     }
 
